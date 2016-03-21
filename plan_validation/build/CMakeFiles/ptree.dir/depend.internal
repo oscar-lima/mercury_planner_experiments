@@ -9,4 +9,4 @@ CMakeFiles/ptree.dir/src/ptree.cpp.o
  ../include/parse_error.h
  ../include/ptree.h
  ../include/sStack.h
- /home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/src/ptree.cpp
+ /home/oscar/mercury_planner_experiments/plan_validation/src/ptree.cpp

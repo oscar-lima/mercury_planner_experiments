@@ -266,7 +266,7 @@ vector
 iostream
 -
 
-/home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/src/plan_validator.cpp
+/home/oscar/mercury_planner_experiments/plan_validation/src/plan_validator.cpp
 plan_validator.h
 -
 string

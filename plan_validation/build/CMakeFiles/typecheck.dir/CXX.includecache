@@ -56,17 +56,17 @@ vector
 iostream
 -
 
-/home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/src/typecheck.cpp
+/home/oscar/mercury_planner_experiments/plan_validation/src/typecheck.cpp
 typecheck.h
-/home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/src/typecheck.h
+/home/oscar/mercury_planner_experiments/plan_validation/src/typecheck.h
 ptree.h
-/home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/src/ptree.h
+/home/oscar/mercury_planner_experiments/plan_validation/src/ptree.h
 functional
 -
 validate.h
-/home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/src/validate.h
+/home/oscar/mercury_planner_experiments/plan_validation/src/validate.h
 Exceptions.h
-/home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/src/Exceptions.h
+/home/oscar/mercury_planner_experiments/plan_validation/src/Exceptions.h
 algorithm
 -
 

@@ -52,15 +52,15 @@ iostream
 deque
 -
 
-/home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/src/ptree.cpp
+/home/oscar/mercury_planner_experiments/plan_validation/src/ptree.cpp
 ptree.h
-/home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/src/ptree.h
+/home/oscar/mercury_planner_experiments/plan_validation/src/ptree.h
 macros.h
-/home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/src/macros.h
+/home/oscar/mercury_planner_experiments/plan_validation/src/macros.h
 DebugWriteController.h
-/home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/src/DebugWriteController.h
+/home/oscar/mercury_planner_experiments/plan_validation/src/DebugWriteController.h
 VisitController.h
-/home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/src/VisitController.h
+/home/oscar/mercury_planner_experiments/plan_validation/src/VisitController.h
 memory
 -
 

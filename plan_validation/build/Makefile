@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation
+CMAKE_SOURCE_DIR = /home/oscar/mercury_planner_experiments/plan_validation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/build
+CMAKE_BINARY_DIR = /home/oscar/mercury_planner_experiments/plan_validation/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,9 +69,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/build/CMakeFiles /home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar/mercury_planner_experiments/plan_validation/build/CMakeFiles /home/oscar/mercury_planner_experiments/plan_validation/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar/mercury_planner_experiments/plan_validation/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

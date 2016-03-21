@@ -27,4 +27,4 @@ CMakeFiles/plan_validator.dir/src/plan_validator.cpp.o
  ../include/sStack.h
  ../include/typecheck.h
  ../include/validate.h
- /home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/src/plan_validator.cpp
+ /home/oscar/mercury_planner_experiments/plan_validation/src/plan_validator.cpp

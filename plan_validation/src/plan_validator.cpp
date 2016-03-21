@@ -324,14 +324,23 @@ int main(int argc,char * argv[])
     // to test the validator class
     PlanValidator pv;
     
-    if (pv.validate(std::string("../data/domain.pddl"), std::string("../data/p01.pddl"), std::string("../data/mercury_02.plan")))
+    if (argc != 4)
     {
-        cout << "plan awesomely valid" << std::endl;
+        std::cout << "USAGE : ./plan_validator domain_path problem_path plan_path" << std::endl;
+        return 0;
+    }
+    
+    std::string domain_path = argv[1];
+    std::string problem_path = argv[2];
+    std::string plan_path = argv[3];
+    
+    if (pv.validate(domain_path, problem_path, plan_path))
+    {
+        cout << "true" << std::endl;
     }
     else
     {
-        cout << "plan not valid" << std::endl;
-        //exit 1;
+        cout << "false" << std::endl;
     }
     
     return 0;

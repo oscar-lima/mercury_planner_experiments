@@ -55,16 +55,16 @@ def calculate_time(filename="elapsed.time"):
                 param9_time += parse_string_to_number(line)
             elif count == 34 or count == 35:
                 param10_time += parse_string_to_number(line)
-    print '1,', translate_time + preprocess_time + param1_time
-    print '2,', translate_time + preprocess_time + param2_time
-    print '3,', translate_time + preprocess_time + param3_time
-    print '4,', translate_time + preprocess_time + param4_time
-    print '5,', translate_time + preprocess_time + param5_time
-    print '6,', translate_time + preprocess_time + param6_time
-    print '7,', translate_time + preprocess_time + param7_time
-    print '8,', translate_time + preprocess_time + param8_time
-    print '9,', translate_time + preprocess_time + param9_time
-    print '10,', translate_time + preprocess_time + param10_time
+    print translate_time + preprocess_time + param1_time
+    print translate_time + preprocess_time + param2_time
+    print translate_time + preprocess_time + param3_time
+    print translate_time + preprocess_time + param4_time
+    print translate_time + preprocess_time + param5_time
+    print translate_time + preprocess_time + param6_time
+    print translate_time + preprocess_time + param7_time
+    print translate_time + preprocess_time + param8_time
+    print translate_time + preprocess_time + param9_time
+    print translate_time + preprocess_time + param10_time
     return
 
 if len(sys.argv) == 2:

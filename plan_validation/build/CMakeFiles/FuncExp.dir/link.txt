@@ -1,0 +1,2 @@
+/usr/bin/ar cr libFuncExp.a  CMakeFiles/FuncExp.dir/src/FuncExp.cpp.o
+/usr/bin/ranlib libFuncExp.a

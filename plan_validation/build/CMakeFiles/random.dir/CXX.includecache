@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/random.h
+cmath
+-
+ctime
+-
+
+/home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/src/random.cpp
+random.h
+/home/oscar/ros_ws/thesis_experiments_ws/src/mercury_planner_experiments/plan_validation/src/random.h
+

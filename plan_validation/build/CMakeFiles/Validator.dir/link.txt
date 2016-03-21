@@ -1,0 +1,2 @@
+/usr/bin/ar cr libValidator.a  CMakeFiles/Validator.dir/src/Validator.cpp.o
+/usr/bin/ranlib libValidator.a

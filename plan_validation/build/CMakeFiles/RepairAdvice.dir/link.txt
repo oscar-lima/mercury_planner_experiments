@@ -1,0 +1,2 @@
+/usr/bin/ar cr libRepairAdvice.a  CMakeFiles/RepairAdvice.dir/src/RepairAdvice.cpp.o
+/usr/bin/ranlib libRepairAdvice.a

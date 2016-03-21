@@ -1,0 +1,2 @@
+/usr/bin/ar cr libProposition.a  CMakeFiles/Proposition.dir/src/Proposition.cpp.o
+/usr/bin/ranlib libProposition.a

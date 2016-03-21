@@ -1,2 +1,0 @@
-/usr/bin/ar cr libPlan.a  CMakeFiles/Plan.dir/src/Plan.cpp.o
-/usr/bin/ranlib libPlan.a

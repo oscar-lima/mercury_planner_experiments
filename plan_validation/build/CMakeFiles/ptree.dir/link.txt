@@ -1,2 +1,0 @@
-/usr/bin/ar cr libptree.a  CMakeFiles/ptree.dir/src/ptree.cpp.o
-/usr/bin/ranlib libptree.a

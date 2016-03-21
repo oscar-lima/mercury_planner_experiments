@@ -1,2 +1,0 @@
-/usr/bin/ar cr libUtils.a  CMakeFiles/Utils.dir/src/Utils.cpp.o
-/usr/bin/ranlib libUtils.a

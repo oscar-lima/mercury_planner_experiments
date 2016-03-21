@@ -1,2 +1,0 @@
-/usr/bin/ar cr libAction.a  CMakeFiles/Action.dir/src/Action.cpp.o
-/usr/bin/ranlib libAction.a

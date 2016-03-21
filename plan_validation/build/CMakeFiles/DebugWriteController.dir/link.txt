@@ -1,2 +1,0 @@
-/usr/bin/ar cr libDebugWriteController.a  CMakeFiles/DebugWriteController.dir/src/DebugWriteController.cpp.o
-/usr/bin/ranlib libDebugWriteController.a

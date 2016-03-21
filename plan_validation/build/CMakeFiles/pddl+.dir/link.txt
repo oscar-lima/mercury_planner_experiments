@@ -1,2 +1,0 @@
-/usr/bin/ar cr libpddl+.a  CMakeFiles/pddl+.dir/src/pddl+.cpp.o
-/usr/bin/ranlib libpddl+.a

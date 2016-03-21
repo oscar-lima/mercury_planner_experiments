@@ -1,2 +1,0 @@
-/usr/bin/ar cr libOwnership.a  CMakeFiles/Ownership.dir/src/Ownership.cpp.o
-/usr/bin/ranlib libOwnership.a

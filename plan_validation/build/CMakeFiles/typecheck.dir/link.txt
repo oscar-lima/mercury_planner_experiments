@@ -1,2 +1,0 @@
-/usr/bin/ar cr libtypecheck.a  CMakeFiles/typecheck.dir/src/typecheck.cpp.o
-/usr/bin/ranlib libtypecheck.a

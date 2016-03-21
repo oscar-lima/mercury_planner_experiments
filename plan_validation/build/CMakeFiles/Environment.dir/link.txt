@@ -1,2 +1,0 @@
-/usr/bin/ar cr libEnvironment.a  CMakeFiles/Environment.dir/src/Environment.cpp.o
-/usr/bin/ranlib libEnvironment.a

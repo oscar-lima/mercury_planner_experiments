@@ -1,2 +1,0 @@
-/usr/bin/ar cr libTrajectoryConstraints.a  CMakeFiles/TrajectoryConstraints.dir/src/TrajectoryConstraints.cpp.o
-/usr/bin/ranlib libTrajectoryConstraints.a

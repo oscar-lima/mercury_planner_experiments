@@ -1,2 +1,0 @@
-/usr/bin/ar cr libState.a  CMakeFiles/State.dir/src/State.cpp.o
-/usr/bin/ranlib libState.a

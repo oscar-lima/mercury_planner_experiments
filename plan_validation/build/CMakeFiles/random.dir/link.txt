@@ -1,2 +1,0 @@
-/usr/bin/ar cr librandom.a  CMakeFiles/random.dir/src/random.cpp.o
-/usr/bin/ranlib librandom.a

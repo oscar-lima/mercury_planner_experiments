@@ -1,2 +1,0 @@
-/usr/bin/ar cr libLaTeXSupport.a  CMakeFiles/LaTeXSupport.dir/src/LaTeXSupport.cpp.o
-/usr/bin/ranlib libLaTeXSupport.a

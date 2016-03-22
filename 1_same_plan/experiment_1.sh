@@ -40,10 +40,12 @@ function run(){
     # compare files
     echo '[EXPERIMENTS] 2. comparing files'
 
-    # generate comparison results
-    for i in `seq 2 $NUMBER_OF_RUNS`;
+    for i in `seq 1 $NUMBER_OF_RUNS`;
     do
-        compare_plans 1 $i $1 >> $CURRENT_DIR/runs/p$PROBLEM/$1/local_results/are_plans_equal_result.txt
+        for j in `seq $(($i + 1)) $NUMBER_OF_RUNS`;
+        do
+            compare_plans $i $j $1 >> $CURRENT_DIR/runs/p$PROBLEM/$1/local_results/are_plans_equal_result.txt
+        done
     done
 
     echo '[EXPERIMENTS] 3. generating plan lengths'
@@ -93,6 +95,3 @@ do
 done
 
 python $SCRIPT_PATH/is_content_all_true.py $GR_BASE_DIR/global_results/does_plan_solve_goal/plan_solve_goal.txt > $GR_BASE_DIR/global_results/all_plans_solve_goal.txt
-
-
-

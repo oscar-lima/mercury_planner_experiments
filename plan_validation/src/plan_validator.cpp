@@ -319,6 +319,22 @@ bool PlanValidator::executePlans(std::string plan_path, int & argcount,TypeCheck
     return false;
 }
 
+bool PlanValidator::checkFileExistance(std::string file_path)
+{
+    // check domain file existance
+    if (boost::filesystem::exists(file_path.c_str()))
+    {
+        // file exists
+        return true;
+    }
+    else
+    {
+        // file does not exist
+        //std::cout << "file does not exist" << std::endl;
+        return false;
+    }
+}
+
 int main(int argc,char * argv[])
 {
     // to test the validator class
@@ -333,6 +349,11 @@ int main(int argc,char * argv[])
     std::string domain_path = argv[1];
     std::string problem_path = argv[2];
     std::string plan_path = argv[3];
+    
+    // check file existance
+    if (!pv.checkFileExistance(domain_path)) return 0;
+    if (!pv.checkFileExistance(problem_path)) return 0;
+    if (!pv.checkFileExistance(plan_path)) return 0;
     
     if (pv.validate(domain_path, problem_path, plan_path))
     {

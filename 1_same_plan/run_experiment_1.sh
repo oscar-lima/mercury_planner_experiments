@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUMBER_OF_PROBLEMS_TO_RUN='10'
+NUMBER_OF_PROBLEMS_TO_RUN='30'
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 delete previous data if any

@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import sys
+import os.path
 
 # checks if all content of the file is filled with 'true'
 
@@ -8,6 +9,13 @@ import sys
 if len(sys.argv) != 2:
     print 'USAGE : python is_content_all_true.py file_path'
     sys.exit(1)
+
+#check file existance
+def check_file_existance(file_):
+    if not os.path.isfile(file_):
+        sys.exit()
+
+check_file_existance(sys.argv[1])
 
 file_path = sys.argv[1]
 

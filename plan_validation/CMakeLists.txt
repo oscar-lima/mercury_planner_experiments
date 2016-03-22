@@ -1,9 +1,12 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(plan_validation)
 
+find_package(Boost COMPONENTS thread system filesystem REQUIRED)
+
 include_directories(
     include
     include/Parser
+    ${Boost_INCLUDE_DIRS}
 )
 
 ### LIBRARY
@@ -57,4 +60,5 @@ set(VALIDATE_LIB
 add_executable(plan_validator src/plan_validator.cpp)
 target_link_libraries(plan_validator 
     ${VALIDATE_LIB}
+    ${Boost_LIBRARIES}
 )

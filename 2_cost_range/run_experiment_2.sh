@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUMBER_OF_DOMAINS_TO_RUN='4'
+NUMBER_OF_DOMAINS_TO_RUN='300'
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 

@@ -40,7 +40,6 @@
  )
 
  (:functions
-	  (path-length ?source ?destination - location) - number
   	(total-cost) - number
  )
 
@@ -57,7 +56,7 @@
      			  (at ?r ?destination)
      			  (not (perceived ?destination))
      			  (not (perceived ?source))
-            (increase (total-cost) 1)
+            	  (increase (total-cost) 1)
      		 )
  )
 

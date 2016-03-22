@@ -43,7 +43,7 @@ for i in range(0, 10):
 #print global_average_list
 
 #print "---------"
-print 'problem, average_time'
+print 'parameters, average_time'
 
 i = 0
 for each in global_average_list:

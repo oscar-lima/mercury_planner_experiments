@@ -35,8 +35,8 @@ function run(){
     echo '[EXPERIMENTS] 1. run planner'
     bash $SCRIPT_PATH'/mercury_planner.sh' $DOMAIN_PATH $PROBLEM_PATH $MERCURY_BASE_PATH $TIMEOUT $SEARCH_TYPE
 
-    mkdir -p runs/d$DOMAIN_COST/$1/local_results
-    mv elapsed.time mercury.plan.* runs/d$DOMAIN_COST/$1
+    mkdir -p $CURRENT_DIR/runs/d$DOMAIN_COST/$1/local_results
+    mv elapsed.time mercury.plan.* $CURRENT_DIR/runs/d$DOMAIN_COST/$1
 
     # compare files
     echo '[EXPERIMENTS] 2. comparing files'
@@ -61,7 +61,7 @@ do
 done
 
 # global analysis, with 10 runs
-mkdir -p runs/d$DOMAIN_COST/global_results/are_plans_equal
+mkdir -p $CURRENT_DIR/runs/d$DOMAIN_COST/global_results/are_plans_equal
 
 # global results base directory
 GR_BASE_DIR=$CURRENT_DIR/runs/d$DOMAIN_COST
@@ -87,13 +87,10 @@ python $SCRIPT_PATH/average_times.py $GR_BASE_DIR > $GR_BASE_DIR/global_results/
 python $SCRIPT_PATH/calc_lenght.py $GR_BASE_DIR/1/ > $GR_BASE_DIR/global_results/plan_lengths.txt
 
 # are plans solving the goal? -> VAL
-mkdir -p runs/d$DOMAIN_COST/global_results/does_plan_solve_goal
+mkdir -p $CURRENT_DIR/runs/d$DOMAIN_COST/global_results/does_plan_solve_goal
 for i in `seq 1 $NUMBER_OF_RUNS`;
 do
-    command $CURRENT_DIR/../plan_validation/build/plan_validator $DOMAIN_PATH $PROBLEM_PATH $GR_BASE_DIR/1/mercury.plan.$i >> runs/d$DOMAIN_COST/global_results/does_plan_solve_goal/plan_solve_goal.txt
+    command $CURRENT_DIR/../plan_validation/build/plan_validator $DOMAIN_PATH $PROBLEM_PATH $GR_BASE_DIR/1/mercury.plan.$i >> $CURRENT_DIR/runs/d$DOMAIN_COST/global_results/does_plan_solve_goal/plan_solve_goal.txt
 done
 
 python $SCRIPT_PATH/is_content_all_true.py $GR_BASE_DIR/global_results/does_plan_solve_goal/plan_solve_goal.txt > $GR_BASE_DIR/global_results/all_plans_solve_goal.txt
-
-
-

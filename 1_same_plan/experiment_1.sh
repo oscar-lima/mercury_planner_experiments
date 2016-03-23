@@ -16,7 +16,7 @@ DOMAIN_PATH=$DOMAIN_BASE_DIR/$DOMAIN/domain.pddl
 PROBLEM_PATH=$DOMAIN_BASE_DIR/$DOMAIN/problems/p$PROBLEM.pddl
 MERCURY_BASE_PATH=$CURRENT_DIR/../mercury_planner/seq-sat-mercury
 SCRIPT_PATH=$CURRENT_DIR/../scripts
-TIMEOUT='10.0'
+TIMEOUT='60.0'
 SEARCH_TYPE='true' # parametrized
 NUMBER_OF_RUNS='10'
 

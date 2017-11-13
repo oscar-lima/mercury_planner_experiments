@@ -3,7 +3,7 @@
 NUMBER_OF_PROBLEMS_TO_RUN='30'
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-delete previous data if any
+# delete previous data if any
 if [ -d "$CURRENT_DIR/runs" ]; then
     rm -rf $CURRENT_DIR/runs
 fi

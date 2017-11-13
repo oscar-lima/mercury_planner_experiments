@@ -6,7 +6,7 @@ if [[ $# != 1 ]]; then
     exit 1
 fi
 
-DOMAIN='btt_domain_w_cost'
+DOMAIN='gpsr_domain_w_cost'
 PROBLEM=${1}
 
 # setup paths

@@ -10,7 +10,7 @@ if [ -d "$CURRENT_DIR/runs" ]; then
 fi
 
 # generate domains
-bash $CURRENT_DIR/../domains/btt_domain/domains/generate_domains.sh $NUMBER_OF_DOMAINS_TO_RUN
+bash $CURRENT_DIR/../domains/gpsr_domain/domains/generate_domains.sh $NUMBER_OF_DOMAINS_TO_RUN
 
 for i in `seq 1 $NUMBER_OF_DOMAINS_TO_RUN`;
 do

@@ -6,7 +6,7 @@ if [[ $# != 1 ]]; then
     exit 1
 fi
 
-DOMAIN='btt_domain'
+DOMAIN='gpsr_domain'
 DOMAIN_COST=${1}
 PROBLEM=5
 

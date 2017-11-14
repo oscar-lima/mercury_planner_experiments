@@ -1,19 +1,17 @@
-(define (problem p8)
+(define (problem p1)
 (:domain gpsr_domain_w_cost)
 (:objects
 
     ; robots
     mbot - robot
-
-    ; persons
-    pedro unknown_person - person
     
     ; locations
     ENTRANCE BEDROOM KITCHEN DINNING_ROOM BATHROOM - location
     LAUNDRY_ROOM CORRIDOR - location
 
-    ; objects
-    crackers coke milk cake banana hair_spray pen juice - object
+    ; person
+    pedro maria diogo salvador monica david sarah - person
+    mike - person
 )
 (:init
     ; initialize total cost
@@ -94,26 +92,28 @@
     (gripper_empty mbot)
 
     ; where are the objects located?
-    (on crackers ENTRANCE)
-    (on coke DINNING_ROOM)
-    (on milk BEDROOM)
-    (on cake CORRIDOR)
-    (on banana ENTRANCE)
-    (on hair_spray BEDROOM)
-    (on pen LAUNDRY_ROOM)
-    (on juice DINNING_ROOM)
+    (at_p pedro ENTRANCE)
+    (at_p maria KITCHEN)
+    (at_p diogo KITCHEN)
+    (at_p salvador BEDROOM)
+    (at_p monica DINNING_ROOM)
+    (at_p david ENTRANCE)
+    (at_p sarah LAUNDRY_ROOM)
+    (at_p mike DINNING_ROOM)
     
+    ;ENTRANCE BEDROOM KITCHEN DINNING_ROOM BATHROOM - location
+    ;LAUNDRY_ROOM CORRIDOR - location
 )
 (:goal (and
             ; transportation tasks
-            (on crackers BATHROOM)
-            (on coke LAUNDRY_ROOM)
-            (on milk DINNING_ROOM)
-            (on cake KITCHEN)
-            (on banana KITCHEN)
-            (on hair_spray BATHROOM)
-            (on pen BEDROOM)
-            (on juice KITCHEN)
+            (at_p pedro BATHROOM)
+            (at_p maria LAUNDRY_ROOM)
+            (at_p diogo DINNING_ROOM)
+            (at_p salvador BATHROOM)
+            (at_p monica LAUNDRY_ROOM)
+            (at_p david KITCHEN)
+            (at_p sarah CORRIDOR)
+            (at_p mike ENTRANCE)
         )
 )
 (:metric minimize (total-cost))

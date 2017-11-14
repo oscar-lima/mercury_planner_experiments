@@ -1,19 +1,16 @@
-(define (problem p4)
+(define (problem p1)
 (:domain gpsr_domain_w_cost)
 (:objects
 
     ; robots
     mbot - robot
-
-    ; persons
-    pedro unknown_person - person
     
     ; locations
     ENTRANCE BEDROOM KITCHEN DINNING_ROOM BATHROOM - location
     LAUNDRY_ROOM CORRIDOR - location
 
-    ; objects
-    crackers coke milk cake - object
+    ; person
+    pedro maria diogo salvador - person
 )
 (:init
     ; initialize total cost
@@ -94,17 +91,17 @@
     (gripper_empty mbot)
 
     ; where are the objects located?
-    (on crackers ENTRANCE)
-    (on coke DINNING_ROOM)
-    (on milk BEDROOM)
-    (on cake CORRIDOR)
+    (at_p pedro ENTRANCE)
+    (at_p maria KITCHEN)
+    (at_p diogo KITCHEN)
+    (at_p salvador BEDROOM)
 )
 (:goal (and
             ; transportation tasks
-            (on crackers BATHROOM)
-            (on coke LAUNDRY_ROOM)
-            (on milk DINNING_ROOM)
-            (on cake KITCHEN)
+            (at_p pedro BATHROOM)
+            (at_p maria LAUNDRY_ROOM)
+            (at_p diogo DINNING_ROOM)
+            (at_p salvador BATHROOM)
         )
 )
 (:metric minimize (total-cost))

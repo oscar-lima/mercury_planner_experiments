@@ -4,16 +4,13 @@
 
     ; robots
     mbot - robot
-
-    ; persons
-    pedro unknown_person - person
     
     ; locations
     ENTRANCE BEDROOM KITCHEN DINNING_ROOM BATHROOM - location
     LAUNDRY_ROOM CORRIDOR - location
 
-    ; objects
-    crackers - object
+    ; person
+    pedro - person
 )
 (:init
     ; initialize total cost
@@ -94,11 +91,11 @@
     (gripper_empty mbot)
 
     ; where are the objects located?
-    (on crackers ENTRANCE)
+    (at_p pedro ENTRANCE)
 )
 (:goal (and
             ; transportation tasks
-            (on crackers BATHROOM)
+            (at_p pedro BATHROOM)
         )
 )
 (:metric minimize (total-cost))

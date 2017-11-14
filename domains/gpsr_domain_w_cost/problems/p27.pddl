@@ -1,22 +1,19 @@
-(define (problem p27)
+(define (problem p1)
 (:domain gpsr_domain_w_cost)
 (:objects
 
     ; robots
     mbot - robot
-
-    ; persons
-    pedro unknown_person - person
     
     ; locations
     ENTRANCE BEDROOM KITCHEN DINNING_ROOM BATHROOM - location
     LAUNDRY_ROOM CORRIDOR - location
 
-    ; objects
-    crackers coke milk cake banana hair_spray pen juice - object
-    tuna napkin photo headphones laptop chocolate coconut - object
-    deodorant toilet_paper plate fork tshirt raquet sunscreen - object
-    paper mousepad cellphone charger microscope - object
+    ; person
+    pedro maria diogo salvador monica david sarah - person
+    mike charly niel watson mason lucy carlos minh - person
+    raphael james bond susy gerhard ploeger katy - person
+    stephan luis sagres jose rodrigo - person
 )
 (:init
     ; initialize total cost
@@ -97,64 +94,64 @@
     (gripper_empty mbot)
 
     ; where are the objects located?
-    (on crackers ENTRANCE)
-    (on coke DINNING_ROOM)
-    (on milk BEDROOM)
-    (on cake CORRIDOR)
-    (on banana ENTRANCE)
-    (on hair_spray BEDROOM)
-    (on pen LAUNDRY_ROOM)
-    (on juice DINNING_ROOM)
-    (on tuna LAUNDRY_ROOM)
-    (on napkin BATHROOM)
-    (on photo DINNING_ROOM)
-    (on headphones BATHROOM)
-    (on laptop ENTRANCE)
-    (on chocolate DINNING_ROOM)
-    (on coconut LAUNDRY_ROOM)
-    (on deodorant CORRIDOR)
-    (on toilet_paper DINNING_ROOM)
-    (on plate BATHROOM)
-    (on fork ENTRANCE)
-    (on tshirt KITCHEN)
-    (on raquet LAUNDRY_ROOM)
-    (on sunscreen KITCHEN)
-    (on paper CORRIDOR)
-    (on mousepad LAUNDRY_ROOM)
-    (on cellphone BEDROOM)
-    (on charger BATHROOM)
-    (on microscope ENTRANCE)
+    (at_p pedro ENTRANCE)
+    (at_p maria KITCHEN)
+    (at_p diogo KITCHEN)
+    (at_p salvador BEDROOM)
+    (at_p monica DINNING_ROOM)
+    (at_p david ENTRANCE)
+    (at_p sarah LAUNDRY_ROOM)
+    (at_p mike DINNING_ROOM)
+    (at_p charly BEDROOM)
+    (at_p niel BATHROOM)
+    (at_p watson KITCHEN)
+    (at_p mason LAUNDRY_ROOM)
+    (at_p lucy ENTRANCE)
+    (at_p carlos DINNING_ROOM)
+    (at_p minh CORRIDOR)
+    (at_p raphael KITCHEN)
+    (at_p james CORRIDOR)
+    (at_p susy LAUNDRY_ROOM)
+    (at_p gerhard BEDROOM)
+    (at_p ploeger CORRIDOR)
+    (at_p katy ENTRANCE)
+    (at_p stephan BATHROOM)
+    (at_p luis KITCHEN)
+    (at_p sagres BEDROOM)
+    (at_p jose DINNING_ROOM)
+    (at_p rodrigo CORRIDOR)
     
+    ;ENTRANCE BEDROOM KITCHEN DINNING_ROOM BATHROOM - location
+    ;LAUNDRY_ROOM CORRIDOR - location
 )
 (:goal (and
             ; transportation tasks
-            (on crackers BATHROOM)
-            (on coke LAUNDRY_ROOM)
-            (on milk DINNING_ROOM)
-            (on cake KITCHEN)
-            (on banana KITCHEN)
-            (on hair_spray BATHROOM)
-            (on pen BEDROOM)
-            (on juice KITCHEN)
-            (on tuna DINNING_ROOM)
-            (on napkin LAUNDRY_ROOM)
-            (on photo BEDROOM)
-            (on headphones LAUNDRY_ROOM)
-            (on laptop DINNING_ROOM)
-            (on chocolate BEDROOM)
-            (on coconut BATHROOM)
-            (on deodorant BATHROOM)
-            (on toilet_paper BATHROOM)
-            (on plate DINNING_ROOM)
-            (on fork KITCHEN)
-            (on tshirt LAUNDRY_ROOM)
-            (on raquet BEDROOM)
-            (on sunscreen LAUNDRY_ROOM)
-            (on paper BEDROOM)
-            (on mousepad CORRIDOR)
-            (on cellphone CORRIDOR)
-            (on charger BEDROOM)
-            (on microscope DINNING_ROOM)
+            (at_p pedro BATHROOM)
+            (at_p maria LAUNDRY_ROOM)
+            (at_p diogo DINNING_ROOM)
+            (at_p salvador BATHROOM)
+            (at_p monica LAUNDRY_ROOM)
+            (at_p david KITCHEN)
+            (at_p sarah CORRIDOR)
+            (at_p mike ENTRANCE)
+            (at_p charly CORRIDOR)
+            (at_p niel ENTRANCE)
+            (at_p watson BATHROOM)
+            (at_p mason DINNING_ROOM)
+            (at_p lucy KITCHEN)
+            (at_p carlos BEDROOM)
+            (at_p minh BEDROOM)
+            (at_p raphael CORRIDOR)
+            (at_p james LAUNDRY_ROOM)
+            (at_p susy DINNING_ROOM)
+            (at_p gerhard BATHROOM)
+            (at_p ploeger ENTRANCE)
+            (at_p katy BEDROOM)
+            (at_p stephan KITCHEN)
+            (at_p luis LAUNDRY_ROOM)
+            (at_p sagres CORRIDOR)
+            (at_p jose BEDROOM)
+            (at_p rodrigo ENTRANCE)
         )
 )
 (:metric minimize (total-cost))

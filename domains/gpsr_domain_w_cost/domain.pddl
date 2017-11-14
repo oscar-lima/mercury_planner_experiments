@@ -118,6 +118,3 @@
     :effect (and (known_r ?p ?r) (increase (total-cost) 1))
   )
 )
-
-; to test this domain:
-; rosrun ffha ffha -o domain.pddl -f problems/p01.pddl

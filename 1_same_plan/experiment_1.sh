@@ -20,11 +20,6 @@ TIMEOUT='60.0'
 SEARCH_TYPE='true' # parametrized
 NUMBER_OF_RUNS='10'
 
-delete previous data if any
-if [ -d "$CURRENT_DIR/runs" ]; then
-    rm -rf $CURRENT_DIR/runs
-fi
-
 function compare_plans(){
 python $SCRIPT_PATH/is_file_content_same.py $CURRENT_DIR/runs/p$PROBLEM/$3/mercury.plan.$1 $CURRENT_DIR/runs/p$PROBLEM/$3/mercury.plan.$2
 }
